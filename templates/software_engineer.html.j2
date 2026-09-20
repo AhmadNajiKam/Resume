@@ -24,6 +24,7 @@
 
     * {
       box-sizing: border-box;
+      font-weight: 600;
     }
 
     html {
@@ -204,6 +205,54 @@
 
 
   <!-- =========================================================
+       EDUCATION
+       ========================================================= -->
+
+  {% if education %}
+  <section>
+    <h2>Education</h2>
+
+    {% for item in education %}
+    <article class="entry">
+
+      <div class="entry-header">
+        <span>{{ item.institution }}</span>
+
+        {% if item.location %}
+        <span class="location">{{ item.location }}</span>
+        {% endif %}
+      </div>
+
+      <div class="entry-subheader">
+        <span>
+          {{ item.degree }}
+
+          {% if item.gpa %}
+          — GPA: {{ item.gpa.value }}/{{ item.gpa.scale }}
+          {% endif %}
+        </span>
+
+        {% if item.graduation %}
+        <span class="date">{{ item.graduation }}</span>
+        {% endif %}
+      </div>
+
+      {% if item.achievements %}
+      <ul>
+        {% for achievement in item.achievements %}
+        <li>{{ achievement }}</li>
+        {% endfor %}
+      </ul>
+      {% endif %}
+
+    </article>
+    {% endfor %}
+  </section>
+  {% endif %}
+
+
+
+  <!-- =========================================================
        EXPERIENCE
        ========================================================= -->
 
@@ -260,62 +309,9 @@
       </div>
 
       {% if project.description %}
-      <p class="project-description">
-        {{ project.description }}
-      </p>
-      {% endif %}
-
-      {% if project.achievements %}
       <ul>
-        {% for achievement in project.achievements %}
-        <li>{{ achievement }}</li>
-        {% endfor %}
-      </ul>
-      {% endif %}
-
-    </article>
-    {% endfor %}
-  </section>
-  {% endif %}
-
-
-  <!-- =========================================================
-       EDUCATION
-       ========================================================= -->
-
-  {% if education %}
-  <section>
-    <h2>Education</h2>
-
-    {% for item in education %}
-    <article class="entry">
-
-      <div class="entry-header">
-        <span>{{ item.institution }}</span>
-
-        {% if item.location %}
-        <span class="location">{{ item.location }}</span>
-        {% endif %}
-      </div>
-
-      <div class="entry-subheader">
-        <span>
-          {{ item.degree }}
-
-          {% if item.gpa %}
-          — GPA: {{ item.gpa.value }}/{{ item.gpa.scale }}
-          {% endif %}
-        </span>
-
-        {% if item.graduation %}
-        <span class="date">{{ item.graduation }}</span>
-        {% endif %}
-      </div>
-
-      {% if item.achievements %}
-      <ul>
-        {% for achievement in item.achievements %}
-        <li>{{ achievement }}</li>
+        {% for description in project.description %}
+        <li>{{ description }}</li>
         {% endfor %}
       </ul>
       {% endif %}

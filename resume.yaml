@@ -17,18 +17,27 @@ education:
       - "Dean's List, 2023–2024"
 
 experience:
+  - company: "Jordan Open Source Association (JOSA)"
+    location: "Amman, Jordan"
+    role: "Open Source Developer — OpenLab Apprentice"
+    start: "May 2026"
+    end: "Present"
+    bullets:
+      - "Contribute to established open-source projects through JOSA's OpenLab apprenticeship, working with production codebases and upstream development workflows."
+      - "Collaborate with open-source communities through code review, issue investigation, implementation, testing, and technical research."
+
   - company: "8BillionMinds"
     location: "Tadworth, United Kingdom"
-    role: "Software Engineer"
+    role: "Software Engineering Volunteer"
     start: "Feb 2026"
-    end: "Present"
+    end: "May 2026"
     bullets:
       - "Maintained and improved a large-scale education platform built with Java 8 and Spring, resolving critical issues across a complex codebase."
       - "Designed and implemented core components of the notification and email system, improving system reliability and user engagement."
 
   - company: "42Irbid"
     location: "Irbid, Jordan"
-    role: "Software Engineer Intern"
+    role: "Software Engineering Intern"
     start: "Jun 2025"
     end: "Present"
     bullets:
@@ -37,8 +46,8 @@ experience:
       - "Built Python projects emphasizing object-oriented design and clean architecture."
 
   - company: "MADAR"
-    location: "Irbid, Jordan"
-    role: "Software Engineer"
+    location: "Amman, Jordan"
+    role: "Software Engineering Intern"
     start: "Jul 2025"
     end: "Sep 2025"
     bullets:
@@ -47,15 +56,16 @@ experience:
 
 projects:
   - name: "SumHub"
-    description: "AI-powered research paper search engine using MongoDB Atlas and Gemini API."
-    achievements:
-      - "Awarded Best Use Case at HackThisFall 2024."
+    description:
+      - "AI-powered research paper search engine using MongoDB Atlas and Gemini API."
 
   - name: "RenderChad"
-    description: "Simple render engine written in pure C++ with zero dependencies, built to test CPU parallelism and learn more about computer graphics."
+    description:
+      - "Simple render engine written in pure C++ with zero dependencies, built to test CPU parallelism and learn more about computer graphics."
 
   - name: "IOTA Decentralized DNS"
-    description: "Leaderless IP state protocol using Go and IOTA, achieving full decentralization."
+    description:
+      - "Leaderless IP state protocol using Go and IOTA, achieving full decentralization."
 
 skills:
   languages:
@@ -81,6 +91,8 @@ skills:
 
   tools:
     - "Docker"
+    - "Kafka"
+    - "Kubernetes"
     - "Git"
     - "GitHub"
     - "Linux"
