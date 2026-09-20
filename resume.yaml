@@ -1,0 +1,114 @@
+personal:
+  name: "Ahmad Naji Kamamji"
+  email: "ahmadnajikam@gmail.com"
+  phone: "+962 786296839"
+  linkedin: "linkedin.com/in/ahmadnajikam"
+  github: "github.com/AhmadNajiKam"
+
+education:
+  - institution: "Jordan University of Science and Technology"
+    location: "Irbid, Jordan"
+    degree: "Bachelor of Engineering in Network Engineering"
+    gpa:
+      value: 3.64
+      scale: 4.0
+    graduation: "Graduated"
+    achievements:
+      - "Dean's List, 2023–2024"
+
+experience:
+  - company: "8BillionMinds"
+    location: "Tadworth, United Kingdom"
+    role: "Software Engineer"
+    start: "Feb 2026"
+    end: "Present"
+    bullets:
+      - "Maintained and improved a large-scale education platform built with Java 8 and Spring, resolving critical issues across a complex codebase."
+      - "Designed and implemented core components of the notification and email system, improving system reliability and user engagement."
+
+  - company: "42Irbid"
+    location: "Irbid, Jordan"
+    role: "Software Engineer Intern"
+    start: "Jun 2025"
+    end: "Present"
+    bullets:
+      - "Reimplemented key components of the C standard library (including printf and getline) from scratch in pure C."
+      - "Developed an algorithm cost optimization project in C, focusing on performance and efficiency."
+      - "Built Python projects emphasizing object-oriented design and clean architecture."
+
+  - company: "MADAR"
+    location: "Irbid, Jordan"
+    role: "Software Engineer"
+    start: "Jul 2025"
+    end: "Sep 2025"
+    bullets:
+      - "Designed and implemented two backend microservices for a GIS platform using Kafka, Node.js, Express, TypeScript, and MongoDB."
+      - "Improved system modularity and scalability through microservices architecture."
+
+projects:
+  - name: "SumHub"
+    description: "AI-powered research paper search engine using MongoDB Atlas and Gemini API."
+    achievements:
+      - "Awarded Best Use Case at HackThisFall 2024."
+
+  - name: "RenderChad"
+    description: "Simple render engine written in pure C++ with zero dependencies, built to test CPU parallelism and learn more about computer graphics."
+
+  - name: "IOTA Decentralized DNS"
+    description: "Leaderless IP state protocol using Go and IOTA, achieving full decentralization."
+
+skills:
+  languages:
+    - "C"
+    - "C++"
+    - "Java"
+    - "Go"
+    - "JavaScript"
+    - "TypeScript"
+    - "HTML/CSS"
+    - "PostgreSQL"
+    - "Python"
+
+  frameworks:
+    - "Spring"
+    - "Hibernate"
+    - "React.js"
+    - "Node.js"
+    - "Express"
+    - "Jest"
+    - "Tailwind CSS"
+    - "Material UI"
+
+  tools:
+    - "Docker"
+    - "Git"
+    - "GitHub"
+    - "Linux"
+    - "MongoDB Atlas"
+    - "AWS"
+
+  concepts:
+    - "Distributed Systems"
+    - "Blockchain"
+    - "Cryptography"
+    - "System Design"
+    - "Networking"
+
+awards:
+  - name: "National CTF Competition"
+    achievement: "Top 20"
+    organizer: "NCSC"
+
+  - name: "HackThisFall 2024"
+    achievement: "Winner — Best Use of MongoDB Atlas"
+
+certifications:
+  - name: "AWS Cloud Practitioner"
+    status: "In Progress"
+
+languages:
+  - language: "Arabic"
+    proficiency: "Native"
+
+  - language: "English"
+    proficiency: "Professional Proficiency"
