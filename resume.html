@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Ahmad Naji Kamamji — Resume</title>
+
+  <style>
+    /*
+     * Keep the document intentionally simple:
+     * - single column
+     * - normal text flow
+     * - no CSS grid
+     * - no layout tables
+     * - no icons
+     * - no absolute positioning
+     */
+
+    @page {
+      size: A4;
+      margin: 14mm 16mm;
+    }
+
+    * {
+      box-sizing: border-box;
+      font-weight: 600;
+    }
+
+    html {
+      font-size: 10pt;
+    }
+
+    body {
+      margin: 0 auto;
+      max-width: 210mm;
+
+      font-family:
+        Arial,
+        Helvetica,
+        sans-serif;
+
+      line-height: 1.3;
+      color: #111;
+      background: white;
+    }
+
+    /* ---------- Header ---------- */
+
+    header {
+      text-align: center;
+      margin-bottom: 12px;
+    }
+
+    h1 {
+      margin: 0 0 4px;
+
+      font-size: 22pt;
+      font-weight: 700;
+      line-height: 1.1;
+    }
+
+    .contact {
+      margin: 0;
+      font-size: 9.5pt;
+    }
+
+    .contact a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    .separator::before {
+      content: " | ";
+    }
+
+    /* ---------- Sections ---------- */
+
+    section {
+      margin-top: 12px;
+    }
+
+    h2 {
+      margin: 0 0 7px;
+
+      font-size: 11.5pt;
+      font-weight: 700;
+      text-transform: uppercase;
+
+      border-bottom: 1px solid #222;
+      padding-bottom: 2px;
+    }
+
+    /* ---------- Entries ---------- */
+
+    .entry {
+      margin-bottom: 9px;
+
+      /* Avoid splitting a short entry across two pages. */
+      break-inside: avoid;
+    }
+
+    .entry:last-child {
+      margin-bottom: 0;
+    }
+
+    .entry-header,
+    .entry-subheader {
+      display: flex;
+      justify-content: space-between;
+      gap: 16px;
+    }
+
+    .entry-header {
+      font-weight: 700;
+    }
+
+    .entry-subheader {
+      margin-top: 1px;
+      font-size: 9.5pt;
+    }
+
+    .location,
+    .date {
+      white-space: nowrap;
+      text-align: right;
+    }
+
+    /* ---------- Bullets ---------- */
+
+    ul {
+      margin: 4px 0 0;
+      padding-left: 18px;
+    }
+
+    li {
+      margin-bottom: 2px;
+    }
+
+    /* ---------- Projects ---------- */
+
+    .project-description {
+      margin: 2px 0 0;
+    }
+
+    /* ---------- Skills ---------- */
+
+    .skill-row {
+      margin: 2px 0;
+    }
+
+    .skill-label {
+      font-weight: 700;
+    }
+
+    /* ---------- Print ---------- */
+
+    @media print {
+      body {
+        max-width: none;
+      }
+
+      a {
+        color: inherit;
+        text-decoration: none;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- =========================================================
+       HEADER
+       ========================================================= -->
+
+  <header>
+    <h1>Ahmad Naji Kamamji</h1>
+
+    <p class="contact">
+      <a href="mailto:ahmadnajikam@gmail.com">
+        ahmadnajikam@gmail.com
+      </a>
+
+      
+      <span class="separator"></span>
+      <span>+962 786296839</span>
+      
+
+      
+      <span class="separator"></span>
+      <a href="https://linkedin.com/in/ahmadnajikam">
+        linkedin.com/in/ahmadnajikam
+      </a>
+      
+
+      
+      <span class="separator"></span>
+      <a href="https://github.com/AhmadNajiKam">
+        github.com/AhmadNajiKam
+      </a>
+      
+    </p>
+  </header>
+
+
+  <!-- =========================================================
+       EDUCATION
+       ========================================================= -->
+
+  
+  <section>
+    <h2>Education</h2>
+
+    
+    <article class="entry">
+
+      <div class="entry-header">
+        <span>Jordan University of Science and Technology</span>
+
+        
+        <span class="location">Irbid, Jordan</span>
+        
+      </div>
+
+      <div class="entry-subheader">
+        <span>
+          Bachelor of Engineering in Network Engineering
+
+          
+          — GPA: 3.64/4.0
+          
+        </span>
+
+        
+        <span class="date">Graduated</span>
+        
+      </div>
+
+      
+      <ul>
+        
+        <li>Dean's List, 2023–2024</li>
+        
+      </ul>
+      
+
+    </article>
+    
+  </section>
+  
+
+
+
+  <!-- =========================================================
+       EXPERIENCE
+       ========================================================= -->
+
+  
+  <section>
+    <h2>Experience</h2>
+
+    
+    <article class="entry">
+
+      <div class="entry-header">
+        <span>Jordan Open Source Association (JOSA)</span>
+
+        
+        <span class="location">Amman, Jordan</span>
+        
+      </div>
+
+      <div class="entry-subheader">
+        <span>Open Source Developer — OpenLab Apprentice</span>
+
+        <span class="date">
+          May 2026 – Present
+        </span>
+      </div>
+
+      
+      <ul>
+        
+        <li>Contribute to established open-source projects through JOSA's OpenLab apprenticeship, working with production codebases and upstream development workflows.</li>
+        
+        <li>Collaborate with open-source communities through code review, issue investigation, implementation, testing, and technical research.</li>
+        
+      </ul>
+      
+
+    </article>
+    
+    <article class="entry">
+
+      <div class="entry-header">
+        <span>8BillionMinds</span>
+
+        
+        <span class="location">Tadworth, United Kingdom</span>
+        
+      </div>
+
+      <div class="entry-subheader">
+        <span>Software Engineering Volunteer</span>
+
+        <span class="date">
+          Feb 2026 – May 2026
+        </span>
+      </div>
+
+      
+      <ul>
+        
+        <li>Maintained and improved a large-scale education platform built with Java 8 and Spring, resolving critical issues across a complex codebase.</li>
+        
+        <li>Designed and implemented core components of the notification and email system, improving system reliability and user engagement.</li>
+        
+      </ul>
+      
+
+    </article>
+    
+    <article class="entry">
+
+      <div class="entry-header">
+        <span>42Irbid</span>
+
+        
+        <span class="location">Irbid, Jordan</span>
+        
+      </div>
+
+      <div class="entry-subheader">
+        <span>Software Engineering Intern</span>
+
+        <span class="date">
+          Jun 2025 – Present
+        </span>
+      </div>
+
+      
+      <ul>
+        
+        <li>Reimplemented key components of the C standard library (including printf and getline) from scratch in pure C.</li>
+        
+        <li>Developed an algorithm cost optimization project in C, focusing on performance and efficiency.</li>
+        
+        <li>Built Python projects emphasizing object-oriented design and clean architecture.</li>
+        
+      </ul>
+      
+
+    </article>
+    
+    <article class="entry">
+
+      <div class="entry-header">
+        <span>MADAR</span>
+
+        
+        <span class="location">Amman, Jordan</span>
+        
+      </div>
+
+      <div class="entry-subheader">
+        <span>Software Engineering Intern</span>
+
+        <span class="date">
+          Jul 2025 – Sep 2025
+        </span>
+      </div>
+
+      
+      <ul>
+        
+        <li>Designed and implemented two backend microservices for a GIS platform using Kafka, Node.js, Express, TypeScript, and MongoDB.</li>
+        
+        <li>Improved system modularity and scalability through microservices architecture.</li>
+        
+      </ul>
+      
+
+    </article>
+    
+  </section>
+  
+
+
+  <!-- =========================================================
+       PROJECTS
+       ========================================================= -->
+
+  
+  <section>
+    <h2>Projects</h2>
+
+    
+    <article class="entry">
+
+      <div class="entry-header">
+        <span>SumHub</span>
+      </div>
+
+      
+      <ul>
+        
+        <li>AI-powered research paper search engine using MongoDB Atlas and Gemini API.</li>
+        
+      </ul>
+      
+
+    </article>
+    
+    <article class="entry">
+
+      <div class="entry-header">
+        <span>RenderChad</span>
+      </div>
+
+      
+      <ul>
+        
+        <li>Simple render engine written in pure C++ with zero dependencies, built to test CPU parallelism and learn more about computer graphics.</li>
+        
+      </ul>
+      
+
+    </article>
+    
+    <article class="entry">
+
+      <div class="entry-header">
+        <span>IOTA Decentralized DNS</span>
+      </div>
+
+      
+      <ul>
+        
+        <li>Leaderless IP state protocol using Go and IOTA, achieving full decentralization.</li>
+        
+      </ul>
+      
+
+    </article>
+    
+  </section>
+  
+
+
+  <!-- =========================================================
+       TECHNICAL SKILLS
+       ========================================================= -->
+
+  
+  <section>
+    <h2>Technical Skills</h2>
+
+    
+    <p class="skill-row">
+      <span class="skill-label">Languages:</span>
+      C, C++, Java, Go, JavaScript, TypeScript, HTML/CSS, PostgreSQL, Python
+    </p>
+    
+
+    
+    <p class="skill-row">
+      <span class="skill-label">Frameworks:</span>
+      Spring, Hibernate, React.js, Node.js, Express, Jest, Tailwind CSS, Material UI
+    </p>
+    
+
+    
+    <p class="skill-row">
+      <span class="skill-label">Tools:</span>
+      Docker, Kafka, Kubernetes, Git, GitHub, Linux, MongoDB Atlas, AWS
+    </p>
+    
+
+    
+    <p class="skill-row">
+      <span class="skill-label">Concepts:</span>
+      Distributed Systems, Blockchain, Cryptography, System Design, Networking
+    </p>
+    
+
+  </section>
+  
+
+
+  <!-- =========================================================
+       AWARDS
+       ========================================================= -->
+
+  
+  <section>
+    <h2>Awards &amp; Achievements</h2>
+
+    <ul>
+      
+      <li>
+        <strong>Top 20</strong>
+        — National CTF Competition
+        
+        (NCSC)
+        
+      </li>
+      
+      <li>
+        <strong>Winner — Best Use of MongoDB Atlas</strong>
+        — HackThisFall 2024
+        
+      </li>
+      
+    </ul>
+
+  </section>
+  
+
+
+  <!-- =========================================================
+       CERTIFICATIONS & LANGUAGES
+       ========================================================= -->
+
+  
+  <section>
+    <h2>Certifications &amp; Languages</h2>
+
+    
+    <p class="skill-row">
+      <span class="skill-label">Certifications:</span>
+
+      
+        AWS Cloud Practitioner
+        
+          (In Progress)
+        
+        
+      
+    </p>
+    
+
+    
+    <p class="skill-row">
+      <span class="skill-label">Languages:</span>
+
+      
+        Arabic (Native)
+        , 
+      
+        English (Professional Proficiency)
+        
+      
+    </p>
+    
+
+  </section>
+  
+
+</body>
+</html>
