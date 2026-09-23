@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>Ahmad Naji Kamamji — Resume</title>
+  <title>Ahmad Kamamji — Resume</title>
 
   <style>
     /*
@@ -18,153 +18,154 @@
      */
 
     @page {
-      size: A4;
-      margin: 14mm 16mm;
-    }
+  size: A4;
+  margin: 14mm 15mm;
+}
 
-    * {
-      box-sizing: border-box;
-      font-weight: 600;
-    }
+* {
+  box-sizing: border-box;
+}
 
-    html {
-      font-size: 10pt;
-    }
+html {
+  font-size: 10pt;
+}
 
-    body {
-      margin: 0 auto;
-      max-width: 210mm;
+body {
+  margin: 0 auto;
+  max-width: 210mm;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 10pt;
+  font-weight: 400;
+  line-height: 1.12;
+  color: #111;
+  background: white;
+}
 
-      font-family:
-        Arial,
-        Helvetica,
-        sans-serif;
+/* Header */
 
-      line-height: 1.3;
-      color: #111;
-      background: white;
-    }
+header {
+  text-align: center;
+  margin-bottom: 8px;
+}
 
-    /* ---------- Header ---------- */
+h1 {
+  margin: 0 0 3px;
+  font-size: 21pt;
+  font-weight: 700;
+  line-height: 1.05;
+}
 
-    header {
-      text-align: center;
-      margin-bottom: 12px;
-    }
+.contact {
+  margin: 0;
+  font-size: 9pt;
+  line-height: 1.1;
+}
 
-    h1 {
-      margin: 0 0 4px;
+.contact a {
+  color: inherit;
+  text-decoration: none;
+}
 
-      font-size: 22pt;
-      font-weight: 700;
-      line-height: 1.1;
-    }
+.separator::before {
+  content: " | ";
+}
 
-    .contact {
-      margin: 0;
-      font-size: 9.5pt;
-    }
+/* Sections */
 
-    .contact a {
-      color: inherit;
-      text-decoration: none;
-    }
+section {
+  margin-top: 8px;
+}
 
-    .separator::before {
-      content: " | ";
-    }
+h2 {
+  margin: 0 0 4px;
+  padding-bottom: 2px;
+  border-bottom: 1px solid #222;
+  font-size: 10.5pt;
+  font-weight: 700;
+  line-height: 1.05;
+  text-transform: uppercase;
+  break-after: avoid;
+}
 
-    /* ---------- Sections ---------- */
+/* Entries */
 
-    section {
-      margin-top: 12px;
-    }
+.entry {
+  margin-bottom: 6px;
+  break-inside: avoid;
+}
 
-    h2 {
-      margin: 0 0 7px;
+.entry:last-child {
+  margin-bottom: 0;
+}
 
-      font-size: 11.5pt;
-      font-weight: 700;
-      text-transform: uppercase;
+.entry-header,
+.entry-subheader {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+}
 
-      border-bottom: 1px solid #222;
-      padding-bottom: 2px;
-    }
+.entry-header {
+  font-weight: 700;
+  break-after: avoid;
+}
 
-    /* ---------- Entries ---------- */
+.entry-subheader {
+  margin-top: 1px;
+  font-size: 9.25pt;
+}
 
-    .entry {
-      margin-bottom: 9px;
+.location,
+.date {
+  text-align: right;
+  white-space: nowrap;
+}
 
-      /* Avoid splitting a short entry across two pages. */
-      break-inside: avoid;
-    }
+/* Bullets */
 
-    .entry:last-child {
-      margin-bottom: 0;
-    }
+ul {
+  margin: 2px 0 0;
+  padding-left: 16px;
+}
 
-    .entry-header,
-    .entry-subheader {
-      display: flex;
-      justify-content: space-between;
-      gap: 16px;
-    }
+li {
+  margin: 0 0 1px;
+  padding-left: 0;
+}
 
-    .entry-header {
-      font-weight: 700;
-    }
+li:last-child {
+  margin-bottom: 0;
+}
 
-    .entry-subheader {
-      margin-top: 1px;
-      font-size: 9.5pt;
-    }
+/* Projects */
 
-    .location,
-    .date {
-      white-space: nowrap;
-      text-align: right;
-    }
+.project-description {
+  margin: 1px 0 0;
+}
 
-    /* ---------- Bullets ---------- */
+/* Skills */
 
-    ul {
-      margin: 4px 0 0;
-      padding-left: 18px;
-    }
+.skill-row {
+  margin: 1px 0;
+  line-height: 1.12;
+}
 
-    li {
-      margin-bottom: 2px;
-    }
+.skill-label {
+  font-weight: 700;
+}
 
-    /* ---------- Projects ---------- */
+/* Print */
 
-    .project-description {
-      margin: 2px 0 0;
-    }
+@media print {
+  body {
+    max-width: none;
+  }
 
-    /* ---------- Skills ---------- */
-
-    .skill-row {
-      margin: 2px 0;
-    }
-
-    .skill-label {
-      font-weight: 700;
-    }
-
-    /* ---------- Print ---------- */
-
-    @media print {
-      body {
-        max-width: none;
-      }
-
-      a {
-        color: inherit;
-        text-decoration: none;
-      }
-    }
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
+}
   </style>
 </head>
 
@@ -175,12 +176,10 @@
        ========================================================= -->
 
   <header>
-    <h1>Ahmad Naji Kamamji</h1>
+    <h1>Ahmad Kamamji</h1>
 
     <p class="contact">
-      <a href="mailto:ahmadnajikam@gmail.com">
         ahmadnajikam@gmail.com
-      </a>
 
       
       <span class="separator"></span>
@@ -189,16 +188,12 @@
 
       
       <span class="separator"></span>
-      <a href="https://linkedin.com/in/ahmadnajikam">
         linkedin.com/in/ahmadnajikam
-      </a>
       
 
       
       <span class="separator"></span>
-      <a href="https://github.com/AhmadNajiKam">
         github.com/AhmadNajiKam
-      </a>
       
     </p>
   </header>
@@ -282,9 +277,11 @@
       
       <ul>
         
-        <li>Contribute to established open-source projects through JOSA's OpenLab apprenticeship, working with production codebases and upstream development workflows.</li>
+        <li>Optimized Woodpecker CI's YAML schema validation in Go by compiling the schema once with sync.Once; reduced CPU profile duration by 86.2% across 20 runs of the same test workload (merged PR #7002).</li>
         
-        <li>Collaborate with open-source communities through code review, issue investigation, implementation, testing, and technical research.</li>
+        <li>Investigated Meshery dependency advisories and proposed fixes for 6 Go advisories and 7 npm vulnerabilities; the npm audit count fell from 17 to 10 on the PR branch (PR #20779, under review).</li>
+        
+        <li>Proposed per-workflow cancellation in Woodpecker CI, spanning the API, scheduling, datastore, frontend, and tests while preserving independent workflows (PR #7165, under review).</li>
         
       </ul>
       
@@ -312,9 +309,9 @@
       
       <ul>
         
-        <li>Maintained and improved a large-scale education platform built with Java 8 and Spring, resolving critical issues across a complex codebase.</li>
+        <li>Fixed a hardcoded SQL query that left student notifications undelivered while teachers received theirs, restoring notifications for students.</li>
         
-        <li>Designed and implemented core components of the notification and email system, improving system reliability and user engagement.</li>
+        <li>Implemented components of the notification and email system in Java 8 and Spring.</li>
         
       </ul>
       
@@ -332,7 +329,7 @@
       </div>
 
       <div class="entry-subheader">
-        <span>Software Engineering Intern</span>
+        <span>Software Engineering Apprentice</span>
 
         <span class="date">
           Jun 2025 – Present
@@ -342,11 +339,11 @@
       
       <ul>
         
-        <li>Reimplemented key components of the C standard library (including printf and getline) from scratch in pure C.</li>
+        <li>Reimplemented C library functions, including printf and line-oriented input, with attention to memory management and error handling.</li>
         
-        <li>Developed an algorithm cost optimization project in C, focusing on performance and efficiency.</li>
+        <li>Implemented Push_Swap in C with linked-list stacks and selection, chunk, and radix strategies; benchmarked operation counts across input sizes up to 500 integers.</li>
         
-        <li>Built Python projects emphasizing object-oriented design and clean architecture.</li>
+        <li>Developing a seedable Python maze generator with Sidewinder and Union-Find, supporting perfect and imperfect mazes and terminal rendering.</li>
         
       </ul>
       
@@ -374,9 +371,9 @@
       
       <ul>
         
-        <li>Designed and implemented two backend microservices for a GIS platform using Kafka, Node.js, Express, TypeScript, and MongoDB.</li>
+        <li>Built authentication and email microservices for a GIS platform using TypeScript, Node.js, and Express; used Kafka to process logs and emails asynchronously.</li>
         
-        <li>Improved system modularity and scalability through microservices architecture.</li>
+        <li>Used GraphQL to deliver granular real-time messaging updates to clients.</li>
         
       </ul>
       
@@ -399,13 +396,29 @@
     <article class="entry">
 
       <div class="entry-header">
+        <span>Push_Swap</span>
+      </div>
+
+      
+      <ul>
+        
+        <li>Implemented two-stack sorting in C with selection, chunk, and radix strategies; used linked lists and operation-count benchmarking to compare algorithms on different input sizes.</li>
+        
+      </ul>
+      
+
+    </article>
+    
+    <article class="entry">
+
+      <div class="entry-header">
         <span>SumHub</span>
       </div>
 
       
       <ul>
         
-        <li>AI-powered research paper search engine using MongoDB Atlas and Gemini API.</li>
+        <li>Built a research-paper discovery application using MongoDB Atlas for document storage, Gemini embeddings, and Pinecone for semantic search; won Best Use of MongoDB Atlas at HackThisFall 2024.</li>
         
       </ul>
       
@@ -415,29 +428,13 @@
     <article class="entry">
 
       <div class="entry-header">
-        <span>RenderChad</span>
+        <span>Inception</span>
       </div>
 
       
       <ul>
         
-        <li>Simple render engine written in pure C++ with zero dependencies, built to test CPU parallelism and learn more about computer graphics.</li>
-        
-      </ul>
-      
-
-    </article>
-    
-    <article class="entry">
-
-      <div class="entry-header">
-        <span>IOTA Decentralized DNS</span>
-      </div>
-
-      
-      <ul>
-        
-        <li>Leaderless IP state protocol using Go and IOTA, achieving full decentralization.</li>
+        <li>Built a three-container WordPress stack with a single TLS entry point, private service network, health-gated startup, file-based secrets, and persistent MariaDB and WordPress volumes.</li>
         
       </ul>
       
@@ -459,28 +456,28 @@
     
     <p class="skill-row">
       <span class="skill-label">Languages:</span>
-      C, C++, Java, Go, JavaScript, TypeScript, HTML/CSS, PostgreSQL, Python
+      C, C++, Java, Go, JavaScript, TypeScript, Python, SQL, Bash
     </p>
     
 
     
     <p class="skill-row">
       <span class="skill-label">Frameworks:</span>
-      Spring, Hibernate, React.js, Node.js, Express, Jest, Tailwind CSS, Material UI
+      Spring, Hibernate, React.js, Next.js, Node.js, Express, Tailwind CSS, Material UI
     </p>
     
 
     
     <p class="skill-row">
       <span class="skill-label">Tools:</span>
-      Docker, Kafka, Kubernetes, Git, GitHub, Linux, MongoDB Atlas, AWS
+      Docker, Docker Compose, Kubernetes, Kafka, NGINX, Git, GitHub Actions, Woodpecker CI, Linux, AWS, MongoDB Atlas, Gemini API, IOTA, Pandoc
     </p>
     
 
     
     <p class="skill-row">
       <span class="skill-label">Concepts:</span>
-      Distributed Systems, Blockchain, Cryptography, System Design, Networking
+      Distributed Systems, CI/CD, Networking, Microservices, Asynchronous Messaging, Systems Programming, Concurrency, Performance Profiling, Cryptography, Blockchain, System Design
     </p>
     
 
@@ -526,18 +523,6 @@
   <section>
     <h2>Certifications &amp; Languages</h2>
 
-    
-    <p class="skill-row">
-      <span class="skill-label">Certifications:</span>
-
-      
-        AWS Cloud Practitioner
-        
-          (In Progress)
-        
-        
-      
-    </p>
     
 
     

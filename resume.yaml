@@ -1,5 +1,5 @@
 personal:
-  name: "Ahmad Naji Kamamji"
+  name: "Ahmad Kamamji"
   email: "ahmadnajikam@gmail.com"
   phone: "+962 786296839"
   linkedin: "linkedin.com/in/ahmadnajikam"
@@ -23,8 +23,9 @@ experience:
     start: "May 2026"
     end: "Present"
     bullets:
-      - "Contribute to established open-source projects through JOSA's OpenLab apprenticeship, working with production codebases and upstream development workflows."
-      - "Collaborate with open-source communities through code review, issue investigation, implementation, testing, and technical research."
+      - "Optimized Woodpecker CI's YAML schema validation in Go by compiling the schema once with sync.Once; reduced CPU profile duration by 86.2% across 20 runs of the same test workload (merged PR #7002)."
+      - "Investigated Meshery dependency advisories and proposed fixes for 6 Go advisories and 7 npm vulnerabilities; the npm audit count fell from 17 to 10 on the PR branch (PR #20779, under review)."
+      - "Proposed per-workflow cancellation in Woodpecker CI, spanning the API, scheduling, datastore, frontend, and tests while preserving independent workflows (PR #7165, under review)."
 
   - company: "8BillionMinds"
     location: "Tadworth, United Kingdom"
@@ -32,18 +33,18 @@ experience:
     start: "Feb 2026"
     end: "May 2026"
     bullets:
-      - "Maintained and improved a large-scale education platform built with Java 8 and Spring, resolving critical issues across a complex codebase."
-      - "Designed and implemented core components of the notification and email system, improving system reliability and user engagement."
+      - "Fixed a hardcoded SQL query that left student notifications undelivered while teachers received theirs, restoring notifications for students."
+      - "Implemented components of the notification and email system in Java 8 and Spring."
 
   - company: "42Irbid"
     location: "Irbid, Jordan"
-    role: "Software Engineering Intern"
+    role: "Software Engineering Apprentice"
     start: "Jun 2025"
     end: "Present"
     bullets:
-      - "Reimplemented key components of the C standard library (including printf and getline) from scratch in pure C."
-      - "Developed an algorithm cost optimization project in C, focusing on performance and efficiency."
-      - "Built Python projects emphasizing object-oriented design and clean architecture."
+      - "Reimplemented C library functions, including printf and line-oriented input, with attention to memory management and error handling."
+      - "Implemented Push_Swap in C with linked-list stacks and selection, chunk, and radix strategies; benchmarked operation counts across input sizes up to 500 integers."
+      - "Developing a seedable Python maze generator with Sidewinder and Union-Find, supporting perfect and imperfect mazes and terminal rendering."
 
   - company: "MADAR"
     location: "Amman, Jordan"
@@ -51,21 +52,21 @@ experience:
     start: "Jul 2025"
     end: "Sep 2025"
     bullets:
-      - "Designed and implemented two backend microservices for a GIS platform using Kafka, Node.js, Express, TypeScript, and MongoDB."
-      - "Improved system modularity and scalability through microservices architecture."
+      - "Built authentication and email microservices for a GIS platform using TypeScript, Node.js, and Express; used Kafka to process logs and emails asynchronously."
+      - "Used GraphQL to deliver granular real-time messaging updates to clients."
 
 projects:
+  - name: "Push_Swap"
+    description:
+      - "Implemented two-stack sorting in C with selection, chunk, and radix strategies; used linked lists and operation-count benchmarking to compare algorithms on different input sizes."
+
   - name: "SumHub"
     description:
-      - "AI-powered research paper search engine using MongoDB Atlas and Gemini API."
+      - "Built a research-paper discovery application using MongoDB Atlas for document storage, Gemini embeddings, and Pinecone for semantic search; won Best Use of MongoDB Atlas at HackThisFall 2024."
 
-  - name: "RenderChad"
+  - name: "Inception"
     description:
-      - "Simple render engine written in pure C++ with zero dependencies, built to test CPU parallelism and learn more about computer graphics."
-
-  - name: "IOTA Decentralized DNS"
-    description:
-      - "Leaderless IP state protocol using Go and IOTA, achieving full decentralization."
+      - "Built a three-container WordPress stack with a single TLS entry point, private service network, health-gated startup, file-based secrets, and persistent MariaDB and WordPress volumes."
 
 skills:
   languages:
@@ -75,52 +76,72 @@ skills:
     - "Go"
     - "JavaScript"
     - "TypeScript"
-    - "HTML/CSS"
-    - "PostgreSQL"
     - "Python"
-
+    - "SQL"
+    - "Bash"
+  web:
+    - "HTML"
+    - "CSS"
+    - "GraphQL"
   frameworks:
     - "Spring"
     - "Hibernate"
     - "React.js"
+    - "Next.js"
     - "Node.js"
     - "Express"
-    - "Jest"
     - "Tailwind CSS"
     - "Material UI"
-
+  databases:
+    - "PostgreSQL"
+    - "MongoDB"
+    - "MariaDB"
+    - "Pinecone"
   tools:
     - "Docker"
-    - "Kafka"
+    - "Docker Compose"
     - "Kubernetes"
+    - "Kafka"
+    - "NGINX"
     - "Git"
-    - "GitHub"
+    - "GitHub Actions"
+    - "Woodpecker CI"
     - "Linux"
-    - "MongoDB Atlas"
     - "AWS"
-
+    - "MongoDB Atlas"
+    - "Gemini API"
+    - "IOTA"
+    - "Pandoc"
+  testing_and_analysis:
+    - "Jest"
+    - "Valgrind"
+    - "pprof"
+    - "govulncheck"
+    - "npm audit"
   concepts:
     - "Distributed Systems"
-    - "Blockchain"
-    - "Cryptography"
-    - "System Design"
+    - "CI/CD"
     - "Networking"
+    - "Microservices"
+    - "Asynchronous Messaging"
+    - "Systems Programming"
+    - "Concurrency"
+    - "Performance Profiling"
+    - "Cryptography"
+    - "Blockchain"
+    - "System Design"
 
 awards:
   - name: "National CTF Competition"
     achievement: "Top 20"
     organizer: "NCSC"
-
   - name: "HackThisFall 2024"
     achievement: "Winner — Best Use of MongoDB Atlas"
 
-certifications:
-  - name: "AWS Cloud Practitioner"
-    status: "In Progress"
+certifications: []
 
 languages:
   - language: "Arabic"
     proficiency: "Native"
-
   - language: "English"
     proficiency: "Professional Proficiency"
