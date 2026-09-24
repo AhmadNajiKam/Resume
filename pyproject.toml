@@ -10,9 +10,11 @@ requires-python = ">=3.14"
 dependencies = [
     "jinja2 (>=3.1.6,<4.0.0)",
     "pypandoc-binary (>=1.17,<2.0)",
-    "pyyaml (>=6.0.3,<7.0.0)",
     "dotenv (>=0.9.9,<0.10.0)",
-    "weasyprint (>=70.0,<71.0)"
+    "weasyprint (>=70.0,<71.0)",
+    "pydantic (>=2.13.5,<3.0.0)",
+    "pydantic-settings (>=2.15.0,<3.0.0)",
+    "pyyaml (>=6.0.3,<7.0.0)",
 ]
 
 [dependency-groups]
