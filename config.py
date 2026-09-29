@@ -56,5 +56,5 @@ class Config(BaseSettings):
         return self.output_dir / self.final_file_name
 
 @lru_cache(maxsize=1)
-def get_config():
+def get_config() -> Config:
     return Config()

@@ -1,5 +1,5 @@
 from config import Config
-from jinja2 import Environment
+from jinja2 import Environment, TemplateError
 from typing import Any
 
 class TemplateCompiler:
@@ -9,7 +9,11 @@ class TemplateCompiler:
 
     def convert(self, env: Environment,
                 parsed_context: Any) -> str:
-        template = env.get_template(self.config.template_name)
-        output = template.render(**parsed_context)
-        return output
-
+        try:
+            template = env.get_template(self.config.template_name)
+            output = template.render(**parsed_context)
+        except TemplateError as e:
+            print(f"Template error has happened: {e.message}")
+        else:
+            return output
+        return ""

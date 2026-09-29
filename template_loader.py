@@ -1,4 +1,4 @@
-from jinja2 import Environment, FileSystemLoader, select_autoescape
+from jinja2 import Environment, FileSystemLoader, TemplateError, select_autoescape
 from config import Config
 from typing import Any
 from abc import ABC, abstractmethod
@@ -23,6 +23,11 @@ class YamlLoader(TemplateLoader):
         super().__init__(config)
 
     def load_context(self) -> Any:
-        with self.config.source_file.open("r", encoding="utf-8") as f:
-            parsed_context: Any = yaml.safe_load(f)
-            return parsed_context
+        try:
+            with self.config.source_file.open("r", encoding="utf-8") as f:
+                parsed_context: Any = yaml.safe_load(f)
+                return parsed_context
+        except IOError as e:
+             print(f"I/O error({e.errno}): {e.strerror}")
+        except Exception as e:
+            print(f"error has happened: {e}")

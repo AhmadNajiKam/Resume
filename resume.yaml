@@ -1,9 +1,17 @@
 personal:
-  name: "Ahmad Kamamji"
+  name: "Ahmad Naji Kamamji"
   email: "ahmadnajikam@gmail.com"
   phone: "+962 786296839"
   linkedin: "linkedin.com/in/ahmadnajikam"
   github: "github.com/AhmadNajiKam"
+
+summary: >
+  DevOps engineer who likes finding out why a system actually broke, not
+  just patching what's visible. Comfortable moving between Linux internals,
+  CI pipelines, and container networking to get to the real cause. I care
+  about systems being dependable for the people who rely on them, and I
+  bring that habit to everything I work on, even early in my career.
+
 
 education:
   - institution: "Jordan University of Science and Technology"
@@ -23,18 +31,18 @@ experience:
     start: "May 2026"
     end: "Present"
     bullets:
-      - "Optimized Woodpecker CI's YAML schema validation in Go by compiling the schema once with sync.Once; reduced CPU profile duration by 86.2% across 20 runs of the same test workload (merged PR #7002)."
-      - "Audited Meshery dependencies and proposed updates addressing 6 Go advisories and 7 npm vulnerabilities; npm audit findings fell from 17 to 10 on the PR branch (PR #20779, under review)."
-      - "Designed per-workflow cancellation for Woodpecker CI across its API, scheduler, data store, frontend, and tests, preserving independent workflows (PR #7165, under review)."
+      - "Profiled Woodpecker CI’s Go YAML validation with pprof, identified repeated schema compilation, and introduced sync.Once caching; reduced CPU profile duration by 86.2% across 20 runs in a merged open-source contribution."
+      - "Diagnosed and resolved a cascading network failure across a KVM/libvirt/Minikube stack by isolating the root cause to an iptables FORWARD chain DROP policy and a misconfigured firewall backend, unblocking driver-related issues and ensuring reliable operation of the on-premise Minikube cluster."
+      - "Deployed and operated a self-hosted Woodpecker CI instance exposed via Cloudflare Tunnel on a custom domain, investigating and resolving server/agent failures spanning DNS resolution, tunnel backend configuration, authentication timeouts, and agent configuration persistence, restoring 100% uptime for the instance."
+      - "Audited Meshery’s Go and npm dependencies with Trivy, govulncheck, and npm audit, proposing fixes for six Go advisories and seven npm vulnerabilities, reducing npm findings from 17 to 10 on the PR branch and improving the OpenSSF Scorecard score from 5/10 to 7/10."
 
   - company: "8BillionMinds"
     location: "Tadworth, United Kingdom"
-    role: "Software Engineering Volunteer"
+    role: "DevOps Volunteer"
     start: "Feb 2026"
     end: "May 2026"
     bullets:
-      - "Corrected a hardcoded SQL query in the Java 8 and Spring notification system, restoring delivery to students while teacher notifications continued to work."
-      - "Developed Java 8 and Spring components for the platform's notification and email system."
+      - "Analyzed application telemetry in Grafana to identify notification delivery failures affecting 91% of students, tracing the issue to a hardcoded SQL query in a Java/Spring application and correcting it to restore delivery."
 
   - company: "42Irbid"
     location: "Irbid, Jordan"
@@ -42,94 +50,69 @@ experience:
     start: "Jun 2025"
     end: "Present"
     bullets:
-      - "Reimplemented C library functions, including printf and line-oriented input, with attention to memory management and error handling."
-      - "Built Push_Swap in C with linked-list stacks and selection, chunk, and radix strategies; benchmarked operation counts for inputs of up to 500 integers."
-      - "Developing a seedable Python maze generator using Sidewinder and Union-Find, with perfect and imperfect maze modes and terminal rendering."
-
-  - company: "MADAR"
-    location: "Amman, Jordan"
-    role: "Software Engineering Intern"
-    start: "Jul 2025"
-    end: "Sep 2025"
-    bullets:
-      - "Built 2 microservices for authentication and email using TypeScript, Node.js, and Express; used Kafka to process email and log events asynchronously."
-      - "Implemented GraphQL-based real-time messaging updates so clients could request the specific fields they needed."
+      - "Built and troubleshot a Docker Compose stack with NGINX, PHP-FPM, WordPress, and MariaDB, resolving service health, networking, volume, and file-permission issues across container boundaries."
+      - "Implemented GitHub Actions workflows for training projects to automate compilation, linting, formatting, and testing on pull requests."
 
 projects:
-  - name: "Push_Swap"
+  - name: "Inception — Containerized Web Stack"
     description:
-      - "Implemented two-stack sorting in C with selection, chunk, and radix strategies; used linked lists and operation-count benchmarking to compare algorithms on different input sizes."
-
-  - name: "SumHub"
-    description:
-      - "Built a research-paper discovery application using MongoDB Atlas for document storage, Gemini embeddings, and Pinecone for semantic search; won Best Use of MongoDB Atlas at HackThisFall 2024."
-
-  - name: "Inception"
-    description:
-      - "Built a three-container WordPress stack with a single TLS entry point, private service network, health-gated startup, file-based secrets, and persistent MariaDB and WordPress volumes."
+      - "Deployed NGINX, WordPress, and MariaDB as three Docker Compose services with a single TLS entry point, isolated network, health-gated startup, secrets, and persistent volumes."
 
 skills:
   languages:
-    - "C"
-    - "C++"
-    - "Java"
     - "Go"
-    - "JavaScript"
-    - "TypeScript"
     - "Python"
-    - "SQL"
     - "Bash"
-  web:
-    - "HTML"
-    - "CSS"
-    - "GraphQL"
-  frameworks:
-    - "Spring"
-    - "Hibernate"
-    - "React.js"
-    - "Next.js"
-    - "Node.js"
-    - "Express"
-    - "Tailwind CSS"
-    - "Material UI"
-  databases:
-    - "PostgreSQL"
-    - "MongoDB"
-    - "MariaDB"
-    - "Pinecone"
-  tools:
+    - "C"
+    - "TypeScript"
+    - "Java"
+    - "SQL"
+  systems_and_containers:
+    - "Linux"
     - "Docker"
     - "Docker Compose"
     - "Kubernetes"
-    - "Kafka"
-    - "NGINX"
-    - "Git"
-    - "GitHub Actions"
-    - "Woodpecker CI"
-    - "Linux"
     - "AWS"
-    - "MongoDB Atlas"
-    - "Gemini API"
-    - "IOTA"
-    - "Pandoc"
-  testing_and_analysis:
-    - "Jest"
-    - "Valgrind"
+    - "NGINX"
+    - "Networking"
+    - "DNS"
+    - "TLS"
+    - "Cron Jobs"
+    - "KVM"
+    - "libvirt"
+    - "Minikube"
+    - "iptables"
+  delivery_and_diagnostics:
+    - "CI/CD"
+    - "Woodpecker CI"
+    - "GitHub Actions"
+    - "Terraform"
+    - "Prometheus"
+    - "Grafana"
+    - "Git"
     - "pprof"
+    - "Valgrind"
     - "govulncheck"
     - "npm audit"
+    - "Trivy"
+    - "Cloudflare Tunnel"
+  backend:
+    - "Node.js"
+    - "Express"
+    - "Spring"
+    - "Kafka"
+    - "MariaDB"
+    - "PostgreSQL"
+    - "WordPress"
+    - "PHP-FPM"
   concepts:
-    - "Distributed Systems"
-    - "CI/CD"
-    - "Networking"
-    - "Microservices"
-    - "Asynchronous Messaging"
-    - "Systems Programming"
-    - "Concurrency"
-    - "Performance Profiling"
-    - "Cryptography"
-    - "Blockchain"
-    - "System Design"
+    - "Site Reliability Engineering"
+    - "Observability"
+    - "Infrastructure as Code"
+    - "Incident Management"
+    - "Root Cause Analysis"
+    - "Service Level Objectives (SLOs)"
+    - "Capacity Planning"
 
 awards:
   - name: "National CTF Competition"
